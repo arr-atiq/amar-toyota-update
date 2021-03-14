@@ -1,0 +1,791 @@
+html{
+    scroll-behavior: smooth;
+}
+body,html {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    width: 100%;
+    /* overflow-x: hidden; */
+}
+/* .container-fluid {
+    padding: 0;
+} */
+
+/* using css for top header */
+.myTopNav{
+    z-index: 1;
+}
+.header {
+    background-color: #f5f5f5;
+    padding: 3px 0 0 0;
+}
+.top-title h5{
+    color: #D71921;
+    margin-top: 15px;
+    display: inline-block;
+}
+.social-div{
+    margin-left: 220px;
+    padding: 5px;
+}
+.top-logo{
+    width: 100px;
+    margin-left: 20px;
+
+}
+.social-logo{
+    display: inline-block;
+}
+.social-logo a {
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.social-logo a .fa-facebook-official {
+    color: #2e467d;
+    border-left: 1px solid lightgray;
+    padding-left: 20px;
+}
+
+.social-logo a .fa-instagram {
+    color: #2f5476;
+}
+
+.social-logo a .fa-linkedin-square {
+    color: #005b92;
+}
+
+.social-logo a .fa-youtube-play {
+    color: #9c281c;
+    border-right: 1px solid lightgray;
+    padding-right: 20px;
+}
+
+.social-logo a:hover .fa-facebook-official {
+    color: #4f6fbb;
+}
+
+.social-logo a:hover .fa-instagram {
+    color: #4c7397;
+}
+
+.social-logo a:hover .fa-linkedin-square {
+    color: #1471aa;
+}
+
+.social-logo a:hover .fa-youtube-play {
+    color: #ce2a17;
+}
+
+@media screen and (max-width: 540px) {
+    .header {
+        display: none;
+    }
+    #icon-t{
+        margin-left: -160px;
+    }
+    #icon-x{
+        margin-left: -160px;
+    }
+    #last-items{
+        display: none;
+    }
+    .toggle-btn #arrow-simple{
+        display: block;
+    }
+    .myTopNav .last-ul .l-items{
+        margin-top: 50px;
+        flex-direction: column;
+    }
+    .myTopNav .last-ul{
+        position: relative;
+        width: 10px;
+    }
+    .myTopNav .last-ul .l-items li{
+        margin-left: -150px;
+    }
+    .myTopNav #sub-img{
+        width: 100px;
+        margin-left: 150px;
+        margin-top: 5px;
+    }
+    .myTopNav #title-head{
+        width: 120px;
+        height: 50px;
+        margin-left: 10px;
+    }
+    .last-ul #div-items{
+        width: 100px;
+    }
+    .fixed-image img{
+        width: 100%;
+        height: 200px;
+    }   
+    .boucher-div .col-6{
+        width: 100%;
+    } 
+    .boucher-div .row .col-6{
+        margin-left: -80px;
+    }
+    .two-element-div .row .col-8{
+        width: 100%;
+    }
+    .two-element-div .row .col-4{
+        width: 100%;
+    }
+    .two-element-div .row .col-8 .heads-img{
+        margin-top: 10px;
+    }
+    .main-slider{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .main-slider .slideContainer{
+        position:relative;
+        width: 420px;
+    }
+    .main-slider .slideContainer .slider-img{
+        width: 480px;
+    }
+    .main-slider .slideContainer2{
+        width: 480px;
+        margin-top: 420px;
+        position:absolute;
+    }
+    .for-top .cont-background{
+        margin-top: 500px;
+    }
+    .car-text{
+        display: flex;
+    }
+    .car-text .inte{
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .social-div{
+        margin-left: 0;
+    }
+    .social-div,.social-logo{
+        padding: 5px;
+    }
+    .top-logo{
+        width: 50px;
+    }
+    .three-icon{
+        margin-left: 200px;
+    }
+    .arrow-icon{
+        margin-left: 80px;
+        color: red;
+        font-size: 30px;
+    }
+    #arrow-down{
+        display: none;
+    }
+    .myTopNav .last-ul .l-items{
+        margin-top: 100px;
+        flex-direction: column;
+    }
+    .l-items .extra a{
+        background-color: black;
+        color: white;
+    }
+    .myTopNav img{
+        width: 50px;
+        height: 50px;
+        margin-top: 10px;
+        margin-left: 150px;
+    }
+   #arrow-simple{
+        color: red;
+        display: block;
+    }
+    .myTopNav #title-head{
+        width: 150px;
+        height: 45px;
+        color: white;
+        margin-left: 50px;
+        margin-top: 10px;
+        border: 1px solid lightgray;
+    }
+    .myTopNav .main-ul .items{
+        position: fixed;
+        top: 150px;
+        right: 0;
+        width: 100%;
+        transition: top .4s;
+    }
+    .myTopNav .main-ul .list-item{
+        display: block;
+        text-align: center;
+        line-height: 30px;
+        width: 28%;
+        margin-top: 20px;
+        margin-left: 38%;
+    }
+    .main-ul{
+        display: none;
+    }
+    .toggle-btn #icon-t{
+        display: block;
+    }
+    #last-items{
+        display: none;
+    }
+    .toggle-btn #arrow-simple{
+        display: block;
+    }
+    .last-ul{
+        width: 10px;
+    }
+    #div-items{
+        width: 200px;
+    }
+    .sub-ul1{
+        margin-top: 20px;
+        margin-left: 100px;
+    }
+    .sub-ul2{
+        margin-top: 90px;
+        margin-left: 100px;
+    }
+    .sub-ul3{
+        margin-top: 160px;
+        margin-left: 100px;
+    }
+    .sub-ul4{
+        margin-top: 230px;
+        margin-left: 100px;
+    }
+    .myTopNav .main-ul .list-item2{
+        display: block;
+        text-align: center;
+        line-height: 30px;
+        margin-left: 38%;
+        width: 25%;
+        background-color: red;
+        text-decoration:none;
+    }
+    .myTopNav .main-ul .list-item2 a{
+        color: white;
+    }
+    .last-ul .l-items{
+        display: inline-block;
+    }
+    .row .indicator-div{
+        display: block;
+    }
+    .row .indicator-div .image-twice{
+        margin-top: 30px;
+    }
+    .indicator-div .image-twice .hy-logo{
+        width: 200px;
+    }
+    .indicator-div .image-twice .tnga-logo{
+        width: 100px;
+    }
+    .indicator-div .altis-text{
+        margin-left: 250px;
+        margin-top: 50px;
+    }
+    .boucher-div .col-6{
+        width: 100%;
+    } 
+    .boucher-div .row .col-6{
+        margin-left: -10px;
+    }
+    .for-top .cont-background{
+        margin-top: 500px;
+    }
+    .main-slider{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .main-slider .slideContainer{
+        position:relative;
+        width: 100%;
+    }
+    .main-slider .slideContainer .slider-img{
+        width: 400px;
+    }
+    .main-slider .slideContainer2{
+        width: 400px;
+        margin-top: 420px;
+        position:absolute;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .social-div{
+        margin-left: 150px;
+        padding: 5px;
+    }
+    .items{
+        margin-left: -250px;
+    }
+    #icon-t{
+        display: none;
+    }
+    #icon-x{
+        display: none;
+    }
+    .myTopNav .last-ul #div-items{
+        display: flex;
+        margin-left: 100px;
+    }
+    #arrow-simple, #arrow-down{
+        display: none;
+    }
+    .indicator-div .image-twice{
+        margin-top: 50px;
+        margin-left: 250px;
+    }
+    .image-twice .hy-logo{
+        width: 100px;
+    }
+    .image-twice .tnga-logo{
+        width: 80px;
+    } 
+    .boucher-div .row .col-6{
+        margin-left: -80px;
+    }
+   
+}
+
+/* creating top navbar */
+nav{
+    margin-top: 10px;
+    z-index: 99;;
+    width: 100%;
+    position: relative;
+}
+nav ul {
+	padding: 0;
+	list-style: none;
+	position: relative;
+}
+.myTopNav .main-ul .list-item2{
+    display: inline-block;
+    background-color: red;
+    text-decoration:none;
+}
+.myTopNav .main-ul .list-item2 a{
+    color: white;
+}
+#icon-t, #icon-x{
+    display: none;
+}
+.main-ul{
+    margin-left: 25%;
+}
+.myTopNav{
+    display: flex;
+}
+.img-toyota{
+    width: 250px;
+    height: 50px;
+}	
+nav ul li {
+	display:inline-block;
+	background-color: white;
+}
+nav ul li a:hover{
+    color: black;
+}
+.myTopNav a {
+	display:block;
+	padding:0 10px;	
+	color:black;
+	font-size:15px;
+    font-weight: 100;
+	line-height: 50px;
+	text-decoration:none;
+}
+nav ul ul {
+	display: none;
+	position: absolute; 
+	top: 40px; 	
+}	
+nav ul li:hover > ul {
+	display:inherit;
+}	
+nav ul ul li {
+	width:230px;
+	float:none;
+	display:list-item;
+	position: relative;
+}	
+.anchor:hover{
+    background-color: red;
+    color: yellow;
+}
+.career a, .career a:hover{
+    background-color: red;
+    text-decoration:none;
+    color: white;
+}
+.sidebar-menu {
+    display: none;
+}
+.toggle-btn{
+    list-style: none;
+}
+.myTopNav .three-icon .toggle-btn .fa{
+    height: 42px;
+    width: 42px;
+    text-align: center;
+    line-height: 42px;
+    list-style: none;
+    border: 1px solid black;
+    cursor: pointer;
+    /* display: none; */
+   
+}
+#arrow-simple, #arrow-down{
+        display: none;
+}
+.video-container {
+    z-index: -1000;
+    padding: 0;
+    margin: 0;
+}
+.row{
+    margin: 0;
+}
+video {
+    height: 100%;
+    margin-top: -2px;
+    padding: 0;
+    width: 100%;
+}
+
+.myTopNav img{
+    width: 250px;
+    height: 50px;
+    margin-top: 15px;
+}
+.last-nav{
+    background-color: black;
+    padding: 0;
+    margin-top: -5px;
+    height: 65px;
+}
+.last-ul .l-items{
+    margin-left: 420px;
+}
+.myTopNav .altis{
+    color: white;
+    margin-left: 150px;
+    margin-top: 10px;
+    height: 55px;
+}
+.list-items{
+    background-color: black;
+}
+.list-items a{
+    color: white;
+    margin-top: 15px;
+}
+.list-items a:hover{
+    background-color: red;
+    color: white;
+    margin-top: 15px;
+}
+.extra a{
+    background-color: white;
+    color: black;
+}
+
+/* indicator part */
+
+.indicator-div{
+    display: flex;
+}
+.hy-logo{
+    width: 260px;
+}
+.tnga-logo{
+    width: 150px;
+}
+.altis-text{
+    margin-left: 100px;
+    margin-top: 50px;
+}
+.image-twice{
+    margin-left: 400px;
+    margin-top: 20px;
+}
+.body-background{
+    height: 130px;
+    background-color: #241E20;
+}
+
+/* tex-info */
+
+.car-text{
+    display: flex;
+    margin-top: 50px;
+}
+
+/* fixed image */
+.fixed-image img{
+    width: 100%;
+    height: 600px;
+}
+/* slider image */
+.main-slider{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-left: 40px;
+}
+.Slide {
+    display: none;
+ }
+ .Slide .slider-img{
+    width: 600px;
+    height: 400px;
+    margin-bottom: 2px solid red;
+ }
+ .main-slider .slideContainer {
+    max-width: 600px;
+    position: relative;
+ }
+ .prevBtn,
+ .nextBtn {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 10px;
+    background-color: rgb(255, 255, 75);
+    color: rgb(50, 0, 116);
+    font-weight: bolder;
+    font-size: 18px;
+    cursor: pointer;
+ }
+ .nextBtn {
+    right: 0;
+ }
+ .Caption {
+    color: #fbff09;
+    font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+ }
+
+
+
+
+ .Slide2 {
+    display: none;
+ }
+ .Slide2 .slider2-img{
+    width: 100%;
+    height: 400px;
+    margin-bottom: 2px solid red;
+ }
+ .slideContainer2 {
+    max-width: 600px;
+    position: relative;
+ }
+ .prevBtn2,
+ .nextBtn2 {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 10px;
+    background-color: rgb(255, 255, 75);
+    color: rgb(50, 0, 116);
+    font-weight: bolder;
+    font-size: 18px;
+    cursor: pointer;
+ }
+ .nextBtn2 {
+    right: 0;
+ }
+ .Caption {
+    color: #fbff09;
+    font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+ }
+
+ /* fixed new */
+
+ .fixed-new{
+     width: 100%;
+     height: 500px;
+ }
+ .cont-set{
+     margin-top: 50px;
+ }
+ .cont-background{
+    height: 120px;
+    background-color: #241E20;
+ }
+ .cont-info{
+     margin-top: 30px;
+     margin-bottom: 40px;
+ }
+ .cont-info p{
+     font-weight: 100;
+ }
+ /* two-element-image */
+ .col-8 img{
+     width: 100%;
+     height: auto;
+ }
+ .col-4 h4{
+     margin-top: 40px;
+ }
+ .right-col{
+     text-align: end;
+ }
+ .last-background{
+    height: 130px;
+    background-color: #241E20;
+    margin-top: 130px;
+ }
+ .blue-logo{
+     width: 250px;
+     margin-top: 80px;
+     margin-left: 200px;
+ }
+ .button-logo{
+     width: 350px;
+     margin-top: 60px;
+     margin-left: 150px;
+ }
+ .blue-text{
+     width: 350px;
+     margin-left: 150px;
+     margin-top: 30px;
+     text-align: center;
+ }
+ .boucher-text{
+     text-align: center;
+     margin-top: 20px;
+ }
+ .boucher-newbtn{
+     width: 450px;
+     outline: none;
+     border: 1px solid black;
+     font-size: 20px;
+     padding: 10px;
+     border-radius: 30px;
+     background-color: white;
+     margin-left: 100px;
+ }
+ .boucher-newbtn:hover{
+     background-color: red;
+     color: white;
+     outline: none;
+     border: none;
+ }
+.left-coloum{
+    border-right: 1px solid lightgray;
+}
+
+
+
+/* Specification area CSS */
+
+.speci {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.spec-title {
+    font-size: 24px;
+}
+
+.table-spec tbody {
+    font-size: 12px;
+}
+
+.table-spec tbody tr {
+    text-align: center;
+}
+
+.table-spec tbody tr th,
+.table-spec tbody tr td {
+    vertical-align: middle;
+}
+
+.middle-padding {
+    padding: 0 20px 0 20px;
+}
+
+/*--------------Footer CSS--------------*/
+
+.footer {
+    background: #212121;
+    padding-top: 70px;
+    padding-bottom:30px;
+}
+
+.widget-title {
+    color: #ffffff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 18px;
+    padding-bottom: 16px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+
+.widget-title:after {
+    background-color: #e82a2a;
+    content: "";
+    bottom: -1px;
+    left: 0;
+    height: 3px;
+    position: absolute;
+    width: 80px;
+}
+
+.widget-link{
+    color:white;
+    margin-bottom: 25px;
+}
+
+.widget-link ul{
+    padding:0;
+}
+
+.widget-link ul li{
+    list-style-type: none;
+}
+
+.widget-link ul li a{
+    text-decoration:none;
+    color:white;
+}
+
+.widget-link ul li a:hover{
+    color:#e82a2a;
+}
+
+
+.footer-link{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 70px;
+}
+
+.copyright-text{
+    font-size:13px;
+    color:white;
+    margin-top:30px;
+}
