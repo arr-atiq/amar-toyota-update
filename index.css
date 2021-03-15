@@ -78,6 +78,114 @@ body,html {
     color: #ce2a17;
 }
 
+img {
+    margin: 7% 0 0 0;
+}
+
+#main-carArea {
+    display: flex;
+}
+
+.rotate-button button {
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    background-color: #333333;
+}
+.rotate-button button:focus{
+    outline: none;
+}
+.rotate-button button:hover{
+    background-color: red;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.rotate-button button i {
+    color: wheat;
+    transform: rotate(180deg);
+}
+
+.rotate-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.allCar-color button {
+    width: 40px;
+    height: 40px;
+    outline: none;
+}
+.allCar-imageDiv img{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.car-attribute-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#second-car-group,
+#third-car-group,
+#fourth-car-group,
+#fifth-car-group,
+#sixth-car-group,
+#seventh-car-group{
+    display: none;
+}
+#car2,#car3,#car4{
+    display: none;
+}
+#car6, #car7, #car8{
+    display: none;
+}
+#car10, #car11, #car12{
+    display: none;
+}
+#car14, #car15, #car16{
+    display: none;
+}
+#car18, #car19, #car20{
+    display: none;
+}
+#car22, #car23, #car24{
+    display: none;
+}
+#car26, #car27, #car28{
+    display: none;
+}
+#title-2,#title-3,#title-4,#title-5,#title-6,#title-7{
+    display: none;
+}
+.color-1{
+    background-color: #636B79;
+}
+.color-2{
+    background-color: #E1E1E1;
+}
+.color-3{
+    background-color: #1D1E1E;
+}
+.color-4{
+    background-color:  #A21E22;
+}
+.color-5{
+    background-color: #FFFFFF;
+}
+.color-6{
+    background-color: #F3F2F2;
+}
+.color-7{
+    background-color: #846F6E;
+}
+.all-car-title{
+    margin-bottom: 25px;
+}
+
 @media screen and (max-width: 540px) {
     .header {
         display: none;
