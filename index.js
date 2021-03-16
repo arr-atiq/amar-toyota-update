@@ -83,6 +83,12 @@ function showNewSlides(n) {
   newSlides[newSlideIndex - 1].style.display = "block";
 }
 
+// for video control
+// window.onload = function () {
+//     var element = document.getElementById('video-con');
+//     element.muted = "muted";
+// }
+
 
 
 // select id for allCarDiv
